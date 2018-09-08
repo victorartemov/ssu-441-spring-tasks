@@ -8,13 +8,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Starter {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
-//        C c = (C)context.getBean("c");
-//        c.sayHiFromD();
-//
-//        E e = (E)context.getBean("e");
-//        e.sayBye();
+        C c = (C)context.getBean("c");
+        c.sayHiFromD();
 
-        F f = (F) context.getBean("f");
+        E e = (E)context.getBean("e");
+        e.sayBye();
+
+        //F f = (F) context.getBean("f");
 
         context.close();
     }

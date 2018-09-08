@@ -24,6 +24,5 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 
     <bean id="methodReplacerImpl" class="model.MethodReplacerImpl"/>
 
-    <bean id="f" class="model.F" init-method="init" destroy-method="destroy"/>
 
 </beans>
